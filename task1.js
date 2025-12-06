@@ -4,7 +4,7 @@ function print(arr, number)
 {
     if(number > arr .length)
         {
-    console.log("🚀 number is greater than array length");
+    console.log("🚀 number is greater than array length",number);
     }
     else if(number < 0)
     {
