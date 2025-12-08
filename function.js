@@ -31,9 +31,14 @@
 //     [10,20,'D']
 //     {max : 20,min :10, grade :'D'}
 // ]
+grade = [
+    {max: 20, min: 10, grade: 'D'},
+    {max: 30, min: 21, grade: 'C'},
+    {max: 40, min: 31, grade: 'B'},
+    {max: 50, min: 41, grade: 'A'}
+];
 
-
-function marks (marks)
+function marks (marks, grade)
 {
 // if(marks < 0)
 //     {
@@ -66,33 +71,47 @@ function marks (marks)
 //         console.log("🚀 ~ A+")
 //     }
 
-    switch(true)
+    // switch(true)
+    // {
+    //     case (marks < 0):
+    //         console.log("🚀 ~ invalid marks");
+    //         break;
+    //     case (marks > 100):
+    //         console.log("🚀 ~ marks can't hire then 100");
+    //         break;
+    //     case (marks <= 36):
+    //         console.log("🚀 ~ faild");
+    //         break;
+    //     case (marks <= 50):
+    //         console.log("🚀 ~ D");
+    //         break;
+    //     case (marks <= 60):
+    //         console.log("🚀 ~ C");
+    //         break;
+    //     case (marks <= 70):
+    //         console.log("🚀 ~ B");
+    //         break;
+    //     case (marks <= 80):
+    //         console.log("🚀 ~ A");
+    //         break;
+    //     case (marks <= 100):
+    //         console.log("🚀 ~ A+");
+    //         break;
+    // }
+
+
+
+    for(let i = 0; i < grade.length; i++)
     {
-        case (marks < 0):
-            console.log("🚀 ~ invalid marks");
-            break;
-        case (marks > 100):
-            console.log("🚀 ~ marks can't hire then 100");
-            break;
-        case (marks <= 36):
-            console.log("🚀 ~ faild");
-            break;
-        case (marks <= 50):
-            console.log("🚀 ~ D");
-            break;
-        case (marks <= 60):
-            console.log("🚀 ~ C");
-            break;
-        case (marks <= 70):
-            console.log("🚀 ~ B");
-            break;
-        case (marks <= 80):
-            console.log("🚀 ~ A");
-            break;
-        case (marks <= 100):
-            console.log("🚀 ~ A+");
-            break;
+        if(marks >= grade[i].min && marks <= grade[i].max)
+        {
+            console.log("🚀 ~ grade:", grade[i].grade);
+            return;
+        }
     }
+    console.log("🚀 ~ invalid marks");
+
 }
 
-marks(1000);
+
+marks(35, grade);
