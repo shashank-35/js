@@ -31,15 +31,10 @@
 //     [10,20,'D']
 //     {max : 20,min :10, grade :'D'}
 // ]
-grade = [
-    {max: 20, min: 10, grade: 'D'},
-    {max: 30, min: 21, grade: 'C'},
-    {max: 40, min: 31, grade: 'B'},
-    {max: 50, min: 41, grade: 'A'}
-];
 
-function marks (marks, grade)
-{
+
+// function marks (marks, grade)
+// {
 // if(marks < 0)
 //     {
 //     console.log("🚀 ~ invalid marks");
@@ -70,6 +65,10 @@ function marks (marks, grade)
 //         {
 //         console.log("🚀 ~ A+")
 //     }
+// }
+
+// function marks (marks, grade)
+// {
 
     // switch(true)
     // {
@@ -98,9 +97,16 @@ function marks (marks, grade)
     //         console.log("🚀 ~ A+");
     //         break;
     // }
+// }
 
-
-
+grade = [
+    {max: 20, min: 10, grade: 'D'},
+    {max: 30, min: 21, grade: 'C'},
+    {max: 40, min: 31, grade: 'B'},
+    {max: 50, min: 41, grade: 'A'}
+];
+function marks (marks, grade)
+{
     for(let i = 0; i < grade.length; i++)
     {
         if(marks >= grade[i].min && marks <= grade[i].max)
@@ -110,8 +116,9 @@ function marks (marks, grade)
         }
     }
     console.log("🚀 ~ invalid marks");
+    
 
 }
 
 
-marks(35, grade);
+marks(200, grade);
