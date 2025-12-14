@@ -1,0 +1,156 @@
+Q1. What are the primitive data types in JavaScript? List all of them with one example each.
+--->primitive datatype means built-in datatype
+    LIST:
+    -string
+    let str = "shashank"
+    -boolian 
+    let bool = true
+    -number
+    let num = 10
+    -null
+    -undefined
+
+Q2. Explain the difference between null and undefined with examples.
+--->null: null means blank place
+    like let arr = []
+
+    undefined: undefined means blank space, value not declare 
+    like let arr = []
+
+Q3. What will be the output of typeof NaN and why?
+---> output of typeof NaN - Number
+
+
+Q4. What is the difference between == and === in JavaScript? When should you use each?
+---> 
+    == is use to compare two variables, numbers, strings etc
+    == check both side without their datatype, case
+
+    === is also use for compare two  variables, numbers, strings etc
+    === check both side with their datatype
+    === check strickly in both side
+    === use when we want to check both side is eqal with strickly
+
+
+
+Q5. Explain the difference between if-else and switch statements. When would you prefer one over the other?
+--->if-else: if else statement use when we want to perform any action base on condition 
+             if condition is true then if block execute otherwise else block execute
+    
+    switch statement: switch statement use when we want to perfrom event base on multiple condition 
+
+
+Q6. What is a ternary operator? Write its syntax and explain with an example.
+--->ternary operator is a same as if-else condition with shortcut 
+    syntax: variable =  condition ? true : false
+    eg :    let persentage = 35;
+             let result = persentage > 34 ? "pass" : "Fail" 
+
+Q7. What are truthy and falsy values in JavaScript? List at least 5 falsy values.
+
+
+
+Q8. Can we use multiple conditions in a single if statement? Explain with the help of logical operators (&&, ||, !).
+
+---> yes we use multiple condition in single if statement using logical operators 
+    we use && operator 
+    when we use && operator then both condition want true
+
+    || or operator 
+    using || operator only one codition want true
+
+    ! not operator 
+    ! means 
+
+Q9. What is the difference between for, while, and do-while loops? When would you use each?
+
+--->for loop :
+    for loop use for perform repeted task 
+    in for loop we must declare starting and ending value 
+
+    while loop
+    while loop  use for perform loop operation 
+    in while loop we give condition 
+    loop work whenever loop condition become true if condition become false loop termenated
+
+
+Q10. Explain what an infinite loop is and how can it be avoided.
+--->infinite loop means loop condition become always true 
+    loop run  check condition - true - loop run check condition - true and repete again infinite
+
+    we use break for avoided infinete loop
+
+Q11. What is the purpose of break and continue statements in loops? Give one example of each.
+--->break :
+    break use in loop , when condition become true then break entire loop
+
+    continue:
+    continue use when we want skip this loop and continue next loop
+
+Q12. How does a for...of loop differ from a for...in loop?
+--->for...of 
+    for...of use for array and return index value 
+
+    for...in
+    for...in use for object and return key and value  
+
+
+Q13. Explain the difference between map() and forEach(). When would you use one over the other?
+--->map()
+    map() use when we want to perform any operation on every element of array and return new array
+
+    forEach()
+    forEach() use when we want tp perform any operation on every element of array and not reaturn 
+
+
+
+
+Q14. What is the difference between filter() and find() methods?
+
+--->
+    filter(): when we use condition base and return multiple value if condition become true
+    find(): when we use condition base  and return first element which become condition true
+
+Q15. How does reduce() work? Explain with a simple example.
+---> reduce() return - last return value , element and index
+        arr[0] is default LRV
+
+Q16. What is the difference between push(), pop(), shift(), and unshift() methods?
+---> push(): push() insert element from last in array
+     pop(): pop() delete element from last in array
+     shift(): shift() delete from start
+     unshift(): unshift() inster from start
+
+
+
+Q17. Explain any 5 string methods with their use cases.
+---> length(): to check length of string
+     reverse(): to convert string reverse
+     toUppercase(): to convert uppercase alphbet
+     toLowercase():to convert lowercase alph
+     split():to convert from string to array
+
+
+Q18. What is the difference between slice() and substring() in strings?
+--->slice():in slice we give star and end and return  section of a string
+    substring(): in substring we
+
+Q19. How do you access properties of an object? Explain dot notation vs bracket notation.
+---> using . we can access properties of an object
+    let obj = {
+        name : "shashank"
+        age : "20"
+    }
+    obj.name
+    obj[age]
+
+Q20. How can you loop through all keys and values of an object?
+--->we use for in to loop all keys and vakues of an object
+    let obj = {
+        name : "shashank"
+        age : "20"
+    }
+
+    
+
+
