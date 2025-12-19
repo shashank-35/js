@@ -104,7 +104,7 @@ console.log("🚀 ~ ans:", ans)
 
 // hello    world ji   !! => hello world ji !!
 
-let str = " hello    world ji   !! "
+// let str = " hello    world ji   !! "
 
 // let result = str.replace(/\s+/g, " ").trim();
 // console.log("🚀 ~ result:", result)
@@ -113,5 +113,19 @@ let str = " hello    world ji   !! "
 // console.log(arr[0])
 
 // console.log(typeof(NaN))
-str.substring(1,3)
-console.log(str.substring(1,3))
+// str.substring(1,3)
+// console.log(str.substring(1,3))
+
+let arr = [1,2,3,4,5,6,7,8,9];
+let arr1 =  arr.toString()
+console.log("🚀 ~ arr1:", arr1)
+console.log("🚀 ~ arr:", arr)
+
+
+
+
+let arr2 = arr.join("/")
+console.log("🚀 ~ arr2:", arr2)
+console.log("🚀 ~ arr:", arr)
+
+
