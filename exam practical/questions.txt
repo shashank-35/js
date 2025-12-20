@@ -1,0 +1,84 @@
+Q1.
+
+Ek array [10, 20, 30, 40] diya hai.
+for loop se sabhi numbers ka sum calculate karo.
+
+
+Q2.
+
+Ek string "hello world" di gayi hai.
+
+First letter ko uppercase karo
+
+Baaki letters same rakho
+👉 Output: "Hello World"
+
+
+Q3.
+Ek array [5, 12, 8, 130, 44] diya hai.
+
+Sirf 50 se chhote numbers ko new array me store karo
+
+Result print karo
+
+(Hint: condition + loop / array method)
+
+
+Q4.
+Ek string "programming" di gayi hai.
+
+Count karo kitni baar "g" aata hai
+
+Final count print karo
+
+
+
+Q5.
+Ek array ["apple", "banana", "cherry"] diya hai.
+
+Har element ke aage "fruit: " add karo => using map
+👉 Output: ["fruit: apple", "fruit: banana", "fruit: cherry"]
+
+
+
+
+Q6.
+Ek array [1, 2, 3, 4, 5, 6, 7, 8] diya hai.
+
+Even numbers ka square nikaalo
+
+Sirf squared even numbers ko new array me store karo
+
+👉 Output: [4, 16, 36, 64]
+
+
+
+Q8.
+
+Write a function that:
+
+given array [1,2,3,4,2,3,5]
+return [1,2,3,4,5]
+
+Takes an array of numbers
+
+Creates a new array containing only unique values
+
+Do NOT use Set
+
+
+Q9.
+
+Write a program that:
+
+Takes an array of strings
+
+["urvish", "raj", "tejash"]
+
+["urvish", "tejash"]
+
+Returns a new array containing strings with length > 5
+
+Convert those strings to uppercase
+
+Use filter() and map()
