@@ -1,0 +1,42 @@
+<!-- let otp = Math.floor(100000 + Math.random() * 900000);
+console.log("🚀 ~ otp:", otp) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Otp</title>
+    <style>
+        #btn{
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btnDiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .btnDiv button:hover{
+            background-color: teal;
+            color: white;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="btnDiv">
+        <button id="btn" type="button"  >Generate Otp</button>
+    </div>
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function(){
+            let otp = Math.random() * 900000 + 100000;
+            otp = Math.floor(otp);  
+            let com = confirm("Your Otp is " + otp );
+        })
+
+    </script>
+</body>
+</html>
